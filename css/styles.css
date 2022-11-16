@@ -1,0 +1,112 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primery-white-color: #ffffff;
+  --primery-black-color: #000000;
+  --address-second-color: rgba(255, 255, 255, 0.6);
+  --primery-bg-color: #2f303a;
+  --page-bg-color: #f5f5f5;
+  --button-primery-bg-color: #2196f3;
+  --button-secondary-bg-color: #f5f4fa;
+}
+body {
+  background-color: var(--page-bg-color);
+  color: var(--primery-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Шапка сайту*/
+
+.logo {
+  color: var(--primery-black-color);
+}
+.first-color-logo {
+  color: var(--accent-color);
+}
+
+/* Сайт навігація */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color)
+}
+
+/* Контактна інформація */
+
+.contact-info .link {
+  color: var(--primery-text-color);
+}
+.contact-info .link:hover,
+.contact-info .link:focus {
+  color: var(--accent-color);
+}
+
+/* Банер */
+
+.baner {
+  background-color: var(--primery-bg-color);
+}
+.baner-title {
+  color: var(--primery-white-color);
+}
+
+/* Кнопка */
+
+.button {
+  color: var(--primery-white-color);
+  background-color: var(--button-primery-bg-color);
+}
+.button:hover,
+.button:focus {
+  color: var(--title-text-color);
+  background-color: var(--button-secondary-bg-color);
+}
+.button.second {
+  color: var(--title-text-color);
+  background-color: var(--button-secondary-bg-color);
+}
+.button.second:hover,
+.button.second:focus {
+  color: var(--primery-white-color);
+  background-color: var(--button-primery-bg-color);
+}
+
+/* Інформація по секціям загальна */
+
+.section .title,
+.section .features,
+.section .team,
+.section .portfolio,
+.section .sample {
+  color: var(--title-text-color);
+}
+
+
+/* Підвал */
+
+.footer {
+  background-color: var(--primery-bg-color);
+}
+.second-color-logo,
+.address-link {
+  color: var(--primery-white-color);
+}
+.footer .link {
+  color: var(--address-second-color);
+}
+.address-link:hover,
+.address-link:focus,
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
+}
