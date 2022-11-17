@@ -9,12 +9,14 @@
   --page-bg-color: #f5f5f5;
   --button-primery-bg-color: #2196f3;
   --button-secondary-bg-color: #f5f4fa;
-  --special-bg-color: #F5F4FA;
+  --special-bg-color: #f5f4fa;
 }
+
 body {
   background-color: var(--page-bg-color);
   color: var(--primery-text-color);
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -26,7 +28,12 @@ body {
 .logo {
   color: var(--primery-black-color);
   font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
+
 .first-color-logo {
   color: var(--accent-color);
 }
@@ -35,20 +42,33 @@ body {
 
 .site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+
 .site-nav .link.current {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 /* Контактна інформація */
 
 .contact-info .link {
   color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
+
 .contact-info .link:hover,
 .contact-info .link:focus {
   color: var(--accent-color);
@@ -59,8 +79,15 @@ body {
 .banner {
   background-color: var(--primery-bg-color);
 }
-.baner-title {
+
+.banner .title {
   color: var(--primery-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Кнопка */
@@ -68,16 +95,26 @@ body {
 .button {
   color: var(--primery-white-color);
   background-color: var(--button-primery-bg-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
+
 .button:hover,
 .button:focus {
   color: var(--title-text-color);
   background-color: var(--button-secondary-bg-color);
 }
+
 .button.second {
   color: var(--title-text-color);
   background-color: var(--button-secondary-bg-color);
 }
+
 .button.second:hover,
 .button.second:focus {
   color: var(--primery-white-color);
@@ -89,14 +126,66 @@ body {
 .section .title,
 .section .features,
 .section .team,
-.section .portfolio,
+.section .portfolio-head,
 .section .sample {
   color: var(--title-text-color);
 }
 
+.section .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Секція особливості */
+
+.section .features {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features.list .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 /* Наша команда */
+
 .section.our-team {
   background-color: var(--special-bg-color);
+}
+
+.section.our-team .team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.section.our-team .job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Портфоліо */
+
+.portfolio.list .sample {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio.list .type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
 }
 
 /* Підвал */
@@ -104,16 +193,28 @@ body {
 .footer {
   background-color: var(--primery-bg-color);
 }
+
 .second-color-logo,
 .address-link {
   color: var(--primery-white-color);
 }
+
 .footer .link {
   color: var(--address-second-color);
 }
+
 .address-link:hover,
 .address-link:focus,
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
+}
+
+.footer .address-link,
+.footer .link {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  text-decoration: none;
 }
