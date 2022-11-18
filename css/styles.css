@@ -93,7 +93,7 @@ body {
 /* Кнопка */
 
 .button {
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-size: 16px;
   text-align: center;
   cursor: pointer;
@@ -131,7 +131,7 @@ body {
 /* Інформація по секціям загальна */
 
 .section .title,
-.section .features,
+.features.list .features,
 .section .team,
 .section .portfolio-head,
 .section .sample {
@@ -147,7 +147,7 @@ body {
 
 /* Секція особливості */
 
-.section .features {
+.features.list .features {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -155,7 +155,6 @@ body {
 }
 
 .features.list .text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -174,7 +173,6 @@ body {
 }
 
 .section.our-team .job {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -190,7 +188,6 @@ body {
 }
 
 .portfolio.list .type {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
 }
@@ -219,7 +216,6 @@ body {
 
 .footer .address-link,
 .footer .link {
-  font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 1.9;
