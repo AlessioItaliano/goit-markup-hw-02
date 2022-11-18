@@ -93,30 +93,37 @@ body {
 /* Кнопка */
 
 .button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button.primery {
   color: var(--primery-white-color);
   background-color: var(--button-primery-bg-color);
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
-.button:hover,
-.button:focus {
+.button.primery:hover,
+.button.primery:focus {
   color: var(--title-text-color);
   background-color: var(--button-secondary-bg-color);
 }
-
-.button.second {
+.button.secondary {
   color: var(--title-text-color);
   background-color: var(--button-secondary-bg-color);
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
 }
 
-.button.second:hover,
-.button.second:focus {
+.button.secondary:hover,
+.button.secondary:focus {
   color: var(--primery-white-color);
   background-color: var(--button-primery-bg-color);
 }
